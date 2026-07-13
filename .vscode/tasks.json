@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve Conquito",
+      "type": "shell",
+      "command": "py -3 -m http.server 8080 --directory ${workspaceFolder}/CONQUITO2",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

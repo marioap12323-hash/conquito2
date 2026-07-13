@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de que hacer</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Lista de que hacer</h1>
+        </header>
+        <main>
+            <section class="panel panel--form">
+                <h2>Agregar nueva tarea</h2>
+                <form id="formTarea" class="form-tarea">
+                    <input type="text" id="nombre" placeholder="Nombre de tarea" autocomplete="off">
+                    <select id="prioridad">
+                        <option value="alta">Alta</option>
+                        <option value="media">Media</option>
+                        <option value="baja">Baja</option>
+                    </select>
+                    <input type="date" id="fecha">
+                    <button type="submit">Agregar tarea</button>
+                </form>
+                <p id="mensaje" class="mensaje"></p>
+            </section>
+            <section class="panel panel--resumen">
+                <h2>Resumen</h2>
+                <div class="resumen-grid">
+                    <div class="resumen-card">
+                        <span>Total</span>
+                        <strong id="total">0</strong>
+                    </div>
+                    <div class="resumen-card">
+                        <span>Pendientes</span>
+                        <strong id="pendientes">0</strong>
+                    </div>
+                    <div class="resumen-card">
+                        <span>Completadas</span>
+                        <strong id="completadas">0</strong>
+                    </div>
+                </div>
+            </section>
+            <section class="panel panel--tareas" id="listaTareas">
+                <h2>Tareas</h2>
+            </section>
+        </main>
+        <script src="JS/script.js" defer></script>
+    </body>
+</html>
